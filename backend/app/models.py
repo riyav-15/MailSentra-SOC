@@ -20,6 +20,21 @@ class User(Base):
     assigned_incidents: Mapped[list["Incident"]] = relationship(back_populates="assigned_analyst")
     notes: Mapped[list["AnalystNote"]] = relationship(back_populates="analyst")
 
+    @property
+    def is_admin(self) -> bool:
+        return self.role == "admin"
+
+    @property
+    def is_analyst(self) -> bool:
+        return self.role in {"analyst", "admin"}
+
+    @property
+    def is_employee(self) -> bool:
+        return self.role == "employee"
+
+    def has_role(self, *required_roles: str) -> bool:
+        return self.role in required_roles
+
 
 class EmailReport(Base):
     __tablename__ = "email_reports"
