@@ -1,0 +1,17 @@
+X-PhishGuard-Sample: Fake educational sample only
+From: Rewards Desk <rewards@company.example>
+Reply-To: claim@bonus-gifts.example.test
+Return-Path: sender@campaign.example.test
+Authentication-Results: mx.company.example; spf=fail smtp.mailfrom=campaign.example.test; dkim=fail; dmarc=fail
+Subject: You have won a gift card
+MIME-Version: 1.0
+Content-Type: text/html; charset=UTF-8
+
+<html>
+  <body>
+    <p>FAKE EDUCATIONAL SAMPLE ONLY.</p>
+    <p>Dear customer, you have won a gift card. Claim your prize now.</p>
+    <p><a href="https://bonus-gifts.example.test/claim">https://company.example/rewards</a></p>
+    <p>Enter your security code to verify your identity.</p>
+  </body>
+</html>

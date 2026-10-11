@@ -1,0 +1,25 @@
+X-PhishGuard-Sample: Fake educational sample only
+From: Accounts Payable <ap@vendor.example>
+Reply-To: billing@invoice-review.example.test
+Return-Path: bounce@vendor-mail.example.test
+Authentication-Results: mx.company.example; spf=softfail smtp.mailfrom=vendor-mail.example.test; dkim=pass; dmarc=fail
+Subject: Overdue invoice payment due today
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="boundary"
+
+--boundary
+Content-Type: text/plain; charset=UTF-8
+
+FAKE EDUCATIONAL SAMPLE ONLY.
+
+Hello user,
+
+Please review the overdue invoice and update bank details before close of business.
+https://invoice-review.example.test/pay
+
+--boundary
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="invoice_details.js"
+
+Attachment body intentionally omitted. Do not execute attachments.
+--boundary--

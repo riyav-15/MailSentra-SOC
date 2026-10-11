@@ -1,0 +1,17 @@
+X-PhishGuard-Sample: Fake educational sample only
+From: Security Awareness <awareness@company.example>
+Reply-To: awareness@company.example
+Return-Path: awareness@company.example
+Authentication-Results: mx.company.example; spf=pass smtp.mailfrom=company.example; dkim=pass; dmarc=pass
+Subject: Monthly security awareness newsletter
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+FAKE EDUCATIONAL SAMPLE ONLY.
+
+Hello team,
+
+This month we are covering safe reporting habits and how to identify suspicious email headers.
+Read the internal article at https://intranet.company.example/security-awareness.
+
+Thank you.
